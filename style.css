@@ -9,27 +9,47 @@
 
 .title {
 	font-family: "Roboto", sans-serif;
-	font-size: 1.3em;
 	text-align: center;
 }
 
 .title-body {
 	font-family: "Roboto", sans-serif;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	text-align:center;
 	margin-top: 1.2em;
 }	
 
 .title-link {
 	font-family: "Roboto", sans-serif;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	margin-top: 0.5em;
 	text-align: center;
 }
 
+.align {
+	margin-top: 3em
+}
 h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.75em;
 	margin-top: 0px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.body-text {
+	font-size: 1.2em;
+	font-family: "Roboto", sans-serif
+}
+
+.center {
+	margin: auto;
+}
+
+.subtitle {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
