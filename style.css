@@ -29,6 +29,7 @@
 .align {
 	margin-top: 3em
 }
+
 h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.75em;
@@ -53,3 +54,35 @@ h2 {
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
+
+.h3-title {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-size: 1.9em;
+}
+
+.top {
+	margin-top: 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#botnet-image {
+	display: block;
+	max-width: 500px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+}
+
+#ddos-image {
+	display: block;
+	max-width: 825px;
+	max-height: 300px;
+	width: auto;
+	height:auto
