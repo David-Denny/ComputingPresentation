@@ -55,6 +55,13 @@ h2 {
 	margin-bottom: 1em;
 }
 
+.algorithm-subtitle {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
 .h3-title {
 	font-family: "Roboto", sans-serif;
 	text-align: center;
@@ -75,6 +82,16 @@ h2 {
 .bold {
 	font-weight: bold;
 }
+
+.center-gravity {
+	
+	text-align: center;
+}
+
+.size {
+	font-size: 3em;
+}
+/* Image's CSS*/
 
 #botnet-image {
 	display: block;

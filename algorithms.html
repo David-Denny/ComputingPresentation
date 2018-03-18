@@ -5,11 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="prism.css">
 
 		<title>Computing Presentation</title>
 	</head>
 
 	<body>
+		<script src="prism.js"></script>
 		<header>
 			<div class="row">
 				<div class="col-xs-12">
@@ -34,7 +36,66 @@
 		</header>
 		
 		<section>
-			
+			<div class="container">
+				<h2 class="center">Algorithm Efficiency - Big O Notation</h2>
+
+				<div class="top row">
+					<div class="col-xs-12 top">
+						<p class="body-text top center-gravity">
+							Big O notation is a mathematical notation that is used to classify algorithms by how their running time and space requirements change as the input grows. Big O specifically describes the worst case scenario of how much memory and time is required by the algorithm.
+						</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<h3 class="algorithm-subtitle">Constant Time  - O(1):</h3>
+					
+					<p class="body-text">
+						O(1) describes an algorithm that will always have the same execution time and will use the same amount of resources.
+					</p>
+					
+					<pre>
+						<code class="language-java">
+							boolean isFirstElementNull(int[] elements) {
+							
+								return elements[0] == null;
+							}
+						</code>
+					</pre>
+					
+					<p class="body-text">
+						This code sample will always execute in the same time because the algorithm does not change depending on different data sets. Therefore, the notation for this is: O(1).
+					</p>
+					
+					<h3 class="algorithm-subtitle">Linear Time - O(N):</h3>
+					
+					<p class="body-text">
+						The notation O(N) describes an algorithm that's performance will increase linearly  and in proportion to the data set used with it.
+					</p>
+					
+					<pre>
+						<code class="language-java">
+							boolean containsValue(int[] elements, int value) {
+							
+								for (int element : elements) {
+								
+									if (element == value) return true;
+									
+									}
+								}
+								
+								return false;
+							}
+						</code>
+					</pre>
+					
+					<p class="body-text">
+						This algorithm scans an array of integers and will return 'true' if one of the elements is equal to a specific value. This algorithm has an efficiency of O(N) (where N is represents the size of the data set) because the larger the data set, the longer it will take for the algorithm to find the value. <br/><br/>
+						
+						Although the algorithm could potentially find the value in the first instance of the loop, ending the function early, Big O notation represents the worst case scenario and always assumes that the algorithm will take as long as possible to complete.
+					</p>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>
