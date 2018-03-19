@@ -94,7 +94,87 @@
 						
 						Although the algorithm could potentially find the value in the first instance of the loop, ending the function early, Big O notation represents the worst case scenario and always assumes that the algorithm will take as long as possible to complete.
 					</p>
+					
+					<h3 class="algorithm-subtitle">Quadratic Time - O(N<sup>2</sup>)</h3>
+					
+					<p class="body-text">
+						O(N<sup>2</sup>) represents an algorithm with a performance that is directly proportional to the square of the size of the data set. Quadratic time is commonly associated with algorithms that has nested iterations over the data set. Multiple iterations can result in O(N<sup>3</sup>), O(N<sup>4</sup>), etc.
+					</p>
+					
+					<pre>
+						<code class="language-java">
+							boolean containsDuplicates(int[] elements) {
+							
+								for (var outer = 0; outer &#62 elements.length; outer++) {
+								
+									for (var inner = 0; inner &#62 elements.length; inner++) {
+									
+										if (!(outer == inner)) {
+											
+											if (elements[outer] == elements[inner]) return true;
+										}
+									}
+								}
+								
+								return false;
+							}
+						</code>
+					</pre>
+					
+					<p class="body-text">
+						This algorithm iterates through the data set (an array of integers) twice, and as long as the two counters aren't equal (to prevent the algorithm checking an integer against itself), checks to see that integer has a duplicate.
+						<br/><br/>
+						
+						This algorithm has a complexity of O(N<sup>2</sup>) because each time the outer loop iterates, the inner loop executes N times. This makes the if statement that checks the duplicate execute N*N times, which is equal to N<sup>2</sup>. Further iterations will cause the complexity to have a higher power.
+						<br/><br/>
+						
+						An example of an algorithm that has the complexity of quadratic time is insertion sort. These algorithms are generally better off avoided because the execution time grows rapidly with a larger data set.
+					</p>
+					
+					<h3 class="algorithm-subtitle">Exponential Time - O(2<sup>N</sup>):</h3>
+					
+					<p class="body-text">
+						O(2<sup>N</sup>) represents an algorithm that grows exponentially. The growth will double with each added piece of data in the data set being used. The curve of an exponential algorithm starts off shallow and rises incredibly quickly.
+					</p>
+
+					<pre>
+						<code class="language-java">
+							int fibonacci(int number) {
+							
+								if(number &#60= 1) return number;
+								
+								return fibonacci(number - 2) + fibonacci(number - 1);
+							}
+						</code>
+					</pre>
+					
+					<p class="body-text">
+						This is an algorithm that calculates Fibonacci numbers. Because it uses recursion, the algorithm's complexity is exponential time. Algorithms like these are usually only suitable if the data set being used is appropiately small because the time required to execute the algorithm increases incredibly rapidly as the data set grows.
+					</p>
+					
+					<h3 class="algorithm-subtitle">Logarithmic Time - O(log N)</h3>
+					
+					<p class="body-text">
+						Logarithmic time is essentially the opposite of an exponential algorithm. With logarithmic algorithms, the time/memory required to execute is reduced as N (the data set) grows larger.
+						<br/><br/>
+						
+						Logarithmic algorithms are identifiable by when variables are constantly halved or doubled. An example of this is a binary search. This algorithm complexity is desirable because the algorithm remains viable even with large data sets.
+					</p>
 				</div>
+				
+				<div class="row">
+					<div class="col-xs-1"></div>
+					
+					<div class="col-xs-10">
+						<h3 class="algorithm-subtitle center-gravity">Big O Notation Complexity Chart</h3>
+						<p class="body-text">
+						As shown in the graph below, the most desirable complexities are constant time (obviously) and logarithmic time because the time they take to execute does not become out of control as the input data set increases, unlike quadratic or exponential time.
+					</p>
+						<img class="image-center" src="assets/bigO.png">
+						
+					</div>
+					
+					<div class="col-xs-1"></div>
 			</div>
 		</section>
 	</body>

@@ -70,7 +70,11 @@ h2 {
 	margin-bottom: 1em;
 	font-size: 1.9em;
 }
-
+.image-center {
+	width: 90%;
+	margin: auto;
+	position: absolute;
+}
 .top {
 	margin-top: 1em;
 }
@@ -89,7 +93,7 @@ h2 {
 }
 
 .size {
-	font-size: 3em;
+	font-size: 1.5em;
 }
 /* Image's CSS*/
 
