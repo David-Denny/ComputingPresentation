@@ -2,10 +2,10 @@
 
 An informational website on 3 topics:
 
-..* Symmetric and Asymmetric Encryption
+* Symmetric and Asymmetric Encryption
 
-..* Network Threats and Protection
+* Network Threats and Protection
 
-..* Algorithm Efficiency - Big O Notation
+* Algorithm Efficiency - Big O Notation
 
 [Website hosted here](https://david-denny.github.io/ComputingPresentation/)
